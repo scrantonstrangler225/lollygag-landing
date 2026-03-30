@@ -2,127 +2,266 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lollygag Revolutionizing Healthcare</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lollygag – Modern Healthcare Platform</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
-    /* Reset */
-    * {
+    body {
+      font-family: 'Inter', sans-serif;
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      background: #f3f4f6;
+      color: #333;
     }
 
-    body, html {
-      height: 100%;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
+    header {
+      background: #4f46e5;
+      padding: 3rem 1.5rem;
       text-align: center;
-      padding: 20px;
-      min-height: 100vh;
+      color: #fff;
     }
 
-    h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      letter-spacing: 2px;
-      margin-bottom: 0.2rem;
-      text-transform: uppercase;
-      text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
     }
 
-    p {
+    header p {
+      margin-top: 0.75rem;
       font-size: 1.25rem;
-      font-weight: 300;
-      max-width: 400px;
-      margin: 0 auto 1.5rem auto;
-      color: rgba(255 255 255 / 0.85);
-      text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+      color: #d1d5db;
     }
 
-    .form-container {
-      width: 100%;
-      max-width: 480px;
-      height: 500px;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 4px 15px rgba(255 255 255 / 0.2);
-      background: rgba(255 255 255 / 0.15);
-      backdrop-filter: blur(8px);
-      margin-top: 1rem;
+    .cta-button {
+      margin-top: 1.5rem;
+      background: #34d399;
+      color: #052e16;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .cta-button:hover {
+      background: #10b981;
+    }
+
+    section {
+      max-width: 960px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    h2 {
+      margin-bottom: 1.5rem;
+      font-size: 1.75rem;
+      color: #4b5563;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .features li {
+      background: #ffffff;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .use-cases {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #4f46e5;
     }
 
     iframe {
       width: 100%;
-      height: 100%;
       border: none;
+      height: 520px;
+      border-radius: 8px;
+      margin-top: 2rem;
+      background: #fff;
     }
 
     footer {
-      margin-top: 40px;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: rgba(255, 255, 255, 0.8);
       text-align: center;
+      padding: 2rem 1rem;
+      background: #4f46e5;
+      color: #fff;
     }
 
     footer a {
-      color: rgba(255, 255, 255, 0.95);
+      color: #d1d5db;
       text-decoration: none;
-      margin: 0 8px;
+      margin: 0 6px;
     }
 
     footer a:hover {
       text-decoration: underline;
     }
 
-    
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 2.25rem;
-      }
+    /* Form Section Styling */
+    .form-container {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 2rem auto;
+    }
 
-      p {
-        font-size: 1rem;
-        max-width: 100%;
-      }
+    .form-container input,
+    .form-container textarea,
+    .form-container select,
+    .form-container button {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      background-color: #f9fafb;
+      border: 1px solid #d1d5db;
+    }
 
-      .form-container {
-        height: 600px;
-        border-radius: 12px;
-      }
+    .form-container button {
+      background-color: #4f46e5;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background-color: #4338ca;
     }
   </style>
 </head>
+
 <body>
+
+<header>
   <h1>Lollygag</h1>
-  <p>Innovative solutions to enhance well-being and patient care.</p>
-  <p>We're building next-generation healthcare tools designed to improve outcomes and simplify experiences. Join our private beta to be among the first to try it out.</p>
+  <p>Reimagining healthcare workflows, patient engagement, and outcomes.</p>
+  <button class="cta-button" onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})">
+    Join Private Beta
+  </button>
+</header>
 
-  <div class="form-container">
-    <!-- Replace the src below with your actual Google Form embed URL -->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeiCAHepTPyzGUkTCQelER_qh2_ywAH6eVV9-6oN8Sw0W7MJQ/viewform?embedded=true" width="640" height="4555" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<section class="features">
+  <h2>What We're Building</h2>
+  <ul>
+    <li>🧠 Intelligent tools to streamline patient care workflows</li>
+    <li>📊 Real-time insights for better clinical decision-making</li>
+    <li>🤝 Seamless coordination across providers and teams</li>
+    <li>📱 Modern, patient-first digital experiences</li>
+    <li>🔐 Secure, compliant infrastructure built for healthcare</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Who It's For</h2>
+  <div class="use-cases">
+    <div class="card">
+      <h3>Patients</h3>
+      <p>Empowering individuals with easy access to their healthcare information and a more transparent, patient-first experience.</p>
+    </div>
+    <div class="card">
+      <h3>Families</h3>
+      <p>Helping families coordinate care, stay informed, and support their loved ones with seamless communication tools.</p>
+    </div>
+    <div class="card">
+      <h3>Clinics</h3>
+      <p>Streamlining workflows to reduce administrative burden and improve patient throughput, leading to better care delivery.</p>
+    </div>
+    <div class="card">
+      <h3>Healthcare Providers</h3>
+      <p>Enabling care teams to collaborate effectively, access real-time insights, and deliver high-quality, patient-centered care.</p>
+    </div>
+    <div class="card">
+      <h3>Everyone in Healthcare</h3>
+      <p>Whether you're in administration, research, or any part of the healthcare system, we help you deliver better outcomes and experiences for patients and providers alike.</p>
+    </div>
+    <div class="card">
+      <h3>Those Tired of Legacy Vendors</h3>
+      <p>If you're frustrated with legacy healthcare platforms that skirt compliance, fail to scale, or deliver poor user experiences.</p>
+    </div>
   </div>
+</section>
 
-  <footer>
-    <div>
-      <a href="mailto:innovation@lollygag.world">Contact</a>
-      |
-      <a href="https://linkedin.com/company/lollygag-world" target="_blank" rel="noopener noreferrer">Linkedin</a>
-      |
-      <a href="/privacy.html">Privacy Policy</a>
-      |
-      <a href="/terms.html">Terms of Use</a>
-    </div>
-    <div style="margin-top: 10px;">
-      © 2026 Lollygag. All rights reserved.
-    </div>
-  </footer>
+<section id="form">
+    <h2>Request Early Access</h2>
+    <p>Join our beta to experience next-generation healthcare tools.</p>
+
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSe44nqBvGgDG2yjFxPDJBmhxctZdysUmEH2BBJdZSbTMRYeDA/formResponse"
+          method="POST"
+          target="_blank"
+          class="form-container">
+
+      <!-- Clinic Name -->
+      <label for="clinic-name">Clinic Name</label>
+      <input name="entry.1446545973" type="text" required placeholder="Your clinic name">
+
+      <!-- Primary Contact Name -->
+      <label for="contact-name">Primary Contact Name</label>
+      <input name="entry.1770586858" type="text" required placeholder="Your full name">
+
+      <!-- Primary Email -->
+      <label for="email">Primary Email</label>
+      <input name="entry.910977402" type="email" required placeholder="you@clinic.com">
+
+      <!-- Primary Phone -->
+      <label for="phone">Primary Phone Number</label>
+      <input name="entry.1333396045" type="tel" required placeholder="(555) 123-4567">
+
+      <!-- Role (Dropdown) -->
+      <label for="role">Your Role</label>
+      <select name="entry.56602832" required>
+        <option value="Administrator">Administrator</option>
+        <option value="Care Coordinator">Care Coordinator</option>
+        <option value="Clinician">Clinician</option>
+        <option value="IT Specialist">IT Specialist</option>
+        <option value="C-Suite">C-Suite</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <!-- ONC 2027 Compliance Question (Yes/No Dropdown) -->
+      <label for="onc-compliance">Are you ONC 2027 Compliant or need help getting compliant?</label>
+      <select name="entry.453705491" required>
+        <option value="Yes">Yes, we are compliant</option>
+        <option value="No">No, we need help becoming compliant</option>
+      </select>
+
+      <button type="submit">Submit Request</button>
+    </form>
+</section>
+
+<footer>
+  <div>
+    <a href="mailto:innovation@lollygag.world">Contact</a> |
+    <a href="https://linkedin.com/company/lollygag-world" target="_blank">LinkedIn</a> |
+    <a href="/privacy.html">Privacy Policy</a> |
+    <a href="/terms.html">Terms of Use</a>
+  </div>
+  <div style="margin-top:10px;">
+    © 2026 Lollygag
+  </div>
+</footer>
+
 </body>
 </html>
-
